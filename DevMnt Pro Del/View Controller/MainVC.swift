@@ -107,13 +107,18 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         })
     }
 
+    func orderPlaced() {
+        guard tally > 0 else {
+            logoImageView.shake()
+            return
+        }
+        self.totalLabel.text = "0"
+        self.animateAstroDude(myImageView: self.logoImageView)
+    }
+
 
     // MARK: - Action
     @IBAction func orderButtonTapped(_ sender: Any) {
-        DispatchQueue.main.async {
-            self.totalLabel.text = "0"
-            self.animateAstroDude(myImageView: self.logoImageView)
-        }
+        orderPlaced()
     }
-
 }
