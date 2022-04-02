@@ -2,7 +2,7 @@
 
 <img src="{https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white}" />
 
-> Our mobile iOS application allows to search for a GitHub user and comb through their repositories. In the app, you will be able to get basic details about the user as well as their repository commit details. 
+> Our mobile iOS application allows to choose from a variety of tasty pizzas and add them to their shopping cart.
 
 [![Swift Version][swift-image]][swift-url]
 
