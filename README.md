@@ -24,6 +24,20 @@
 #### Xcode 
 You will need [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12) in order to open and run the app 
 
+## Model Code Snippet 
+```swift
+struct Pizza {
+    
+    let name: String
+    let cheeseType: String
+    let price: Double
+    let description: String
+    let rating: Double
+    let cal: Int
+    let imageName: String
+}
+```
+
 ## Let me know what you think
 
 Ivan Ramirez 
