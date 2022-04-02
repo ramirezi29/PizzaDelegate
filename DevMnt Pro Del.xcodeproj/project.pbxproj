@@ -17,6 +17,7 @@
 		1BB9A85B2798FC8C0021C4D4 /* ItemCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB9A85A2798FC8C0021C4D4 /* ItemCVCell.swift */; };
 		1BB9A85D279903610021C4D4 /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB9A85C279903610021C4D4 /* Pizza.swift */; };
 		1BB9A85F279903E50021C4D4 /* PizzaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB9A85E279903E50021C4D4 /* PizzaData.swift */; };
+		1BE0458627F8E466002C746E /* IRButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0458527F8E466002C746E /* IRButton.swift */; };
 		1BEAE74327F7974A00FC28BA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEAE74227F7974A00FC28BA /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		1BB9A85A2798FC8C0021C4D4 /* ItemCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCVCell.swift; sourceTree = "<group>"; };
 		1BB9A85C279903610021C4D4 /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
 		1BB9A85E279903E50021C4D4 /* PizzaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaData.swift; sourceTree = "<group>"; };
+		1BE0458527F8E466002C746E /* IRButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRButton.swift; sourceTree = "<group>"; };
 		1BEAE74227F7974A00FC28BA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +103,7 @@
 			children = (
 				1BB9A8472798FA130021C4D4 /* Assets.xcassets */,
 				1BEAE74227F7974A00FC28BA /* Extensions.swift */,
+				1BE0458527F8E466002C746E /* IRButton.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				1BB9A85B2798FC8C0021C4D4 /* ItemCVCell.swift in Sources */,
 				1BB9A83F2798FA120021C4D4 /* AppDelegate.swift in Sources */,
 				1BB9A8412798FA120021C4D4 /* SceneDelegate.swift in Sources */,
+				1BE0458627F8E466002C746E /* IRButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
