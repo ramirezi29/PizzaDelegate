@@ -1,6 +1,6 @@
 # PizzaDelegate
 
-<img src="{https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white}" />
+<img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white">
 
 > Our mobile iOS application allows to choose from a variety of tasty pizzas and add them to their shopping cart.
 
