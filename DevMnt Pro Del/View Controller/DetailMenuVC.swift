@@ -11,7 +11,6 @@ protocol PlaceOrderProtocol: AnyObject {
     func addOrder()
 }
 
-//MARK: - Boss View, details the Main VC what to do
 class DetailMenuVC: UIViewController{
     
     @IBOutlet weak var pizzaImageView: UIImageView!
@@ -24,11 +23,9 @@ class DetailMenuVC: UIViewController{
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var dismissButton: UIButton!
     @IBOutlet weak var priceLabel: UILabel!
-    
-    // ⚾️🍕 Landing pad to catch the pizza details
+
     var pizza: Pizza?
 
-    //Declare the pizza delegate
     weak var pizzaDelegate: PlaceOrderProtocol?
 
     override func viewDidLoad() {
@@ -40,7 +37,6 @@ class DetailMenuVC: UIViewController{
     func styleDismissButton() {
         dismissButton.setImage(UIImage(systemName: "x.circle.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 32, weight: .medium, scale: .default)), for: .normal)
 
-        // change the color
         dismissButton.tintColor = .systemPink
     }
 
@@ -59,16 +55,12 @@ class DetailMenuVC: UIViewController{
     
     
     @IBAction func addButtonTapped(_ sender: Any) {
-        /*
-         GOAL: When the button is tapped on VC #2, we want the count label in VC #1 to increment by 1
-         */
+
         pizzaDelegate?.addOrder()
     }
     
     @IBAction func dismissButtonTapped(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
-
-
     }
     
 }

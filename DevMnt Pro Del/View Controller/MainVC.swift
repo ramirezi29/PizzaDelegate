@@ -37,13 +37,11 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        // define the cell
+
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "pizzaCell", for: indexPath) as? ItemCVCell else { return UICollectionViewCell() }
 
-        // index of pizzas
         let pizzaOptions = pizzaData.pizzas[indexPath.row]
 
-        // link to landing pad
         cell.pizza = pizzaOptions
 
         return cell
@@ -53,22 +51,17 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //where we want to go to
+
         guard let destinationVC = segue.destination as? DetailMenuVC,
 
-                // our custom cell
-              let cell = sender as? ItemCVCell,
+                let cell = sender as? ItemCVCell,
 
-                //indexPath
-              let indexPath = self.myCollectionView.indexPath(for: cell) else { return }
+                let indexPath = self.myCollectionView.indexPath(for: cell) else { return }
 
         let pizzaOptions = pizzaData.pizzas[indexPath.row]
 
-        //Lets tie this all together
         destinationVC.pizza = pizzaOptions
 
-        //Need to assign the delegate to our VC #1
-        // VC #1 becomes the intern with 'self' and takes the order from the boss VC #2
         destinationVC.pizzaDelegate = self
     }
 
@@ -103,17 +96,21 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
             }
 
         }, completion: { (_) in
-            //
+            self.tally = 0
+            self.totalLabel.text = "\(self.tally)"
         })
     }
 
     func orderPlaced() {
         guard tally > 0 else {
-            logoImageView.shake()
+            DispatchQueue.main.async {
+                self.logoImageView.shake()
+            }
             return
         }
-        self.totalLabel.text = "0"
-        self.animateAstroDude(myImageView: self.logoImageView)
+        DispatchQueue.main.async {
+            self.animateAstroDude(myImageView: self.logoImageView)
+        }
     }
 
 
