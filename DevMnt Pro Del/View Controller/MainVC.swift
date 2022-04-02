@@ -12,7 +12,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
 
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var totalLabel: UILabel!
-    @IBOutlet weak var orderButton: UIButton!
+    @IBOutlet weak var orderButton: IRButton!
     @IBOutlet weak var myCollectionView: UICollectionView!
 
     private let pizzaData = PizzaData()

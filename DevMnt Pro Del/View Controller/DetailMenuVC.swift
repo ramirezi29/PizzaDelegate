@@ -19,7 +19,7 @@ class DetailMenuVC: UIViewController{
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var cheeseLabel: UILabel!
-    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var addButton: IRButton!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var dismissButton: UIButton!
     @IBOutlet weak var priceLabel: UILabel!
